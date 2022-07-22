@@ -4,16 +4,21 @@
     <HelloWorld msg="Welcome to Your Vue.js App" /> -->
     <EventCard v-for="event in events" :key="event.id" :event="event" />
   </div>
+  <div class="category">
+    <Category v-for="event in events" :key="event.id" :event="event" />
+  </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import EventCard from '@/components/EventCard.vue'
+import Category from '@/components/Category.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    EventCard
+    EventCard,
+    Category
   },
   data() {
     return {
@@ -39,5 +44,11 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: right;
 }
 </style>
