@@ -1,4 +1,5 @@
 <template>
+  <h1>Events for Good</h1>
   <div class="events">
     <!-- <img alt="Vue logo" src="../assets/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js App" /> -->
@@ -15,7 +16,7 @@ import EventCard from '@/components/EventCard.vue'
 import Category from '@/components/Category.vue'
 
 export default {
-  name: 'HomeView',
+  name: 'EventListView',
   components: {
     EventCard,
     Category
